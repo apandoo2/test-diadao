@@ -1,5 +1,6 @@
 $card_color : #93A446;
-p {
+$typo_color: #574318;
+ p {
      line-height: 24px;
 }
  .heroOverlay {
@@ -32,6 +33,7 @@ p {
      background-size: cover;
 }
  #shoots {
+     -webkit-transform: scaleX(-1);
      transform: scaleX(-1);
      background-image: url("../../img/assets/YRshoot1-2322-15.jpg");
      height: 400px;
@@ -59,50 +61,45 @@ p {
      margin-bottom: 5%;
 }
  .content1, .content2, .card-text {
-     color: #574318;
+     color: $typo_color;
      margin-top: 5%;
 }
 /*Offre Card*/
  .card-deck {
-     margin-top: 15%;
+     margin-top: 5%;
+}
+ .card-footer {
+     padding: .75rem 1.25rem;
+     background-color: #fff;
+     border-top: 0px;
 }
  .card-deck .card-img-block {
-     width: 91%;
-     margin: 0 auto;
-     position: relative;
-     bottom: 30%;
-}
- .card-deck .card-img-block img {
      border-radius: 5px;
+     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
 }
- .card-deck .btn-primary,nav .btn-primary {
+ .card-deck .btn-primary, nav .btn-primary {
      background-color: $card_color;
      border-color: $card_color;
 }
- .card-deck .text-right {
-     text-align: right!important;
-     float: right;
-}
- .two-columns {
-     width: 300px;
-     -moz-column-count: 2;
-     -moz-column-gap: 20px;
-     -webkit-column-count: 2;
-     -webkit-column-gap: 20px;
-     column-count: 2;
-     column-gap: 20px;
-}
 
+.card-text-price {
+    color: $typo_color;
+    font-size: 24px;
+    font-weight:400;
+}
+.ml-n5 {
+    margin-left: -2.5rem!important;
+}
 
  @media only screen and (max-width: 600px) {
-     #parallax-image,#parallax-image2 {
+     #parallax-image, #parallax-image2 {
          background-size: contain;
     }
-     .h3,h3 {
+     .h3, h3 {
          font-size: .75rem;
     }
-     .h6,h6 {
+     .h6, h6 {
          font-size: .5rem;
     }
      .carousel-item .img-fluid {
@@ -110,14 +107,20 @@ p {
          height: auto;
          padding-top: 40%;
     }
-     .carousel-control-prev,.carousel-control-next {
+     .carousel-control-prev, .carousel-control-next {
          padding-top: 40%;
     }
-     .card-deck .card-img-block {
-         top: 0px;
+     .mt-n5, .my-n5 {
+         margin-top: 0px !important;
+    }
+     .pr-3 {
+         float: left !important;
+         text-align: left !important;
+         padding-left: 1rem!important;
     }
      .card-deck .card-img-block img {
          border-radius: 0;
+         -webkit-box-shadow: none;
          box-shadow: none;
     }
      #shoots {
@@ -125,19 +128,26 @@ p {
          margin-top: 0;
          position: relative;
     }
-
-    .navbar-brand {
-        text-align: center;
+     #chambre {
+         margin-left: 0;
+         margin-top: 10%;
+         position: relative;
+         width: auto;
+         height: 400px;
     }
-
-    .logo {
-        width : 40%;
+     .navbar-brand {
+         text-align: center;
     }
-    
+     .logo {
+         width: 40%;
+    }
+     .card-footer {
+         padding-top: 0px;
+    }
 }
-
-@media only screen and (max-width: 800px) {
-    .card-deck .card-img-block {
-        bottom: 10%;
-   }
+ @media only screen and (max-width: 800px) {
+     .card-deck .card-img-block {
+         bottom: 10%;
+    }
 }
+/*# sourceMappingURL=main.css.map */
