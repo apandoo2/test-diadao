@@ -1,5 +1,10 @@
 $card_color : #93A446;
 $typo_color: #574318;
+$body-color : #F9F9F9; 
+
+body {
+    background-color: $body-color;
+}
  p {
      line-height: 24px;
 }
@@ -22,6 +27,16 @@ $typo_color: #574318;
  .heroOverlay para {
      font-size: 1.5vw;
 }
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    letter-spacing: 0.6px;
+    color: #FFFFFF;
+    font: Regular 12px/17px Open Sans;
+  }
+
  #parallax-image2 {
      background-image: url("../../img/assets/suite6-354-15.jpg");
      height: 500px;
@@ -32,19 +47,21 @@ $typo_color: #574318;
      background-repeat: no-repeat;
      background-size: cover;
 }
- #shoots {
+
+#parallax-image3 {
+    background-image: url("../../img/assets/chambre22-123-15.jpg");
+    height: 500px;
+    width: 100%;
+    margin: 100px 0 100px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+.shoots {
      -webkit-transform: scaleX(-1);
      transform: scaleX(-1);
-     background-image: url("../../img/assets/YRshoot1-2322-15.jpg");
-     height: 400px;
-     width: 100%;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     position: absolute;
-     margin-left: 10%;
-     margin-top: 10%;
-     z-index: 7;
 }
  #chambre {
      background-image: url("../../img/assets/chambre22-123-15.jpg");
@@ -90,6 +107,11 @@ $typo_color: #574318;
 }
 .ml-n5 {
     margin-left: -2.5rem!important;
+}
+
+/*footer image*/
+.img-logo-footer {
+    border: 0;
 }
 
  @media only screen and (max-width: 600px) {
